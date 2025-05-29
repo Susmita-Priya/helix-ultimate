@@ -43,6 +43,12 @@ $params = $this->state->get('params');
 //Blog Options
 $attribs = json_decode($this->item->attribs ?? "");
 
+// $this->form->setValue('attribs', null, (array) $attribs);
+
+// $this->form->setValue('article_layout', 'attribs', !empty($attribs->article_layout) ? $attribs->article_layout : '');
+// $this->form->setValue('show_title', 'attribs', !empty($attribs->show_title) ? $attribs->show_title : '');
+// $this->form->setValue('link_titles', 'attribs', !empty($attribs->link_titles) ? $attribs->link_titles : '');
+
 $this->form->setValue('helix_ultimate_image', 'attribs', !empty($attribs->helix_ultimate_image) ? $attribs->helix_ultimate_image : '');
 $this->form->setValue('helix_ultimate_image_alt_txt', 'attribs', !empty($attribs->helix_ultimate_image_alt_txt) ? $attribs->helix_ultimate_image_alt_txt : '');
 $this->form->setValue('helix_ultimate_article_format', 'attribs', !empty($attribs->helix_ultimate_article_format) ? $attribs->helix_ultimate_article_format : 'standard');
